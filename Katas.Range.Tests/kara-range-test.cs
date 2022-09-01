@@ -22,4 +22,11 @@ public class KataRangeTest
         Assert.That(() => new Range("."), Throws.ArgumentException);
     }
 
+    [Test]
+    public void throw_an_error_if_input_has_a_symbol_that_is_not_a_coma()
+    {
+        Assert.That(() => new Range("(2/3]"), Throws.ArgumentException);
+
+    }
+
 }
