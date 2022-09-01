@@ -13,7 +13,7 @@ public class KataRangeTest
     public void range_input_should_be_equal_to_the_expected_value()
     {
 
-        Assert.That(() => new Range("(2,6]"), Throws.ArgumentException);
+        Assert.That(() => new Range("(2,6]"), Throws.Nothing);
     }
 
 
