@@ -29,4 +29,11 @@ public class KataRangeTest
 
     }
 
+    [Test]
+    public void throw_an_error_if_not_in_parenthesis() 
+    {
+
+        Assert.That(() => new Range("1,4"), Throws.ArgumentException);
+    }
+
 }
