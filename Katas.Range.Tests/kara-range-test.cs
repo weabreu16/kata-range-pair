@@ -16,5 +16,10 @@ public class KataRangeTest
         Assert.That(() => new Range("(2,6]"), Throws.Nothing);
     }
 
+    [Test]
+    public void throw_an_error_if_the_value_received_is_a_character() 
+    {
+        Assert.That(() => new Range("."), Throws.ArgumentException);
+    }
 
 }
